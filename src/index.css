@@ -11,3 +11,81 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.ticket {
+  border-radius: 0;
+}
+
+.ticket:not(.ticket-disabled):hover {
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, .55);
+}
+
+.ticket-disabled {
+  opacity: .3;
+  border: 1px solid rgba(0, 0, 0, .35);
+  cursor: not-allowed;
+}
+
+.event-swimlane-heading {
+  display: flex;
+  padding-left: 30%;
+  margin-bottom: 15px;
+}
+
+.event-swimlane-heading span {
+  width: 15%;
+}
+
+.event-swimlane-item-name {
+  padding: 25px;
+  border: 1px solid rgba(0, 0, 0, .2);
+  max-width: 200px;
+  min-width: 200px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.event-swimlane-item.row>* {
+  width: unset;
+  flex-shrink: unset;
+  margin-top: unset;
+}
+
+.event-swimlane-item-rooms {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  border: 1px solid rgba(0, 0, 0, .2);
+  gap: 60px;
+  min-width: 119px;
+  max-width: 119px;
+}
+
+.event-swimlane-item-lines {
+  border: 1px solid rgba(0, 0, 0, .2);
+  width: 100% !important;
+  gap: 25px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 25px;
+}
+
+.event-swimlane-item {
+  width: 100%;
+  margin: 0 !important;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.event-swimlane-item-line-block {
+  display: block;
+  padding: 18px 25px;
+  border: 1px solid rgba(0, 0, 0, .35);
+}
+
+.event-swimlane-item-line {
+  display: flex;
+  gap: 15px;
+}
